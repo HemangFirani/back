@@ -1,0 +1,125 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Dongle-regular";
+}
+@font-face {
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    align-items: center;
+    font-family: "Dongle-Bold";
+}
+.logo img{
+    width:100px;
+    height: 50px;
+    margin-right: 695px;
+    
+}
+.nav-menu ul{
+ display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 1.6rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+.nav-menu a:hover{
+    color: #ff7f50;
+}
+.city-overview {
+    display: flex;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.city-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.city-info {
+    margin-left: 40px;
+}
+
+.city-info h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.city-info p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.trip-details p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #ff7f50;
+    font-size: 1.6rem;
+}
+
+.book-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: #333;
+}
+.book-now a{
+    color: #f4f4f4;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}

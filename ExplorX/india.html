@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | ExplorX</title>
+    <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="ExplorX Logo"></a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/destination">Abroad</a></li>
+                <li><a href="/hotel">Hotels</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinations" class="destinations-section">
+            <h2>Explore Our Top India's Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <a href="/taj"><img src="images/taj.jpg" alt="Agra"></a>
+                    <h3>Agra</h3>
+                    <p>Visit the iconic Taj Mahal and experience the beauty of Agra.</p>
+                </div>
+                <div class="destination-item">
+                    <a href="/jai"><img src="images/jai.jpg" alt="Jaipur"></a>
+                    <h3>Jaipur</h3>
+                    <p>Experience the rich culture and history of the Pink City.</p>
+                </div>
+                <div class="destination-item">
+                    <a href="/mumbai"><img src="images/mum.jpg" alt="Mumbai"></a>
+                    <h3>Mumbai</h3>
+                    <p>Explore the vibrant city known as the financial capital of India.</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="toggleDarkMode()" class="dark-mode-btn">Toggle Dark Mode</button>
+                <button onclick="addToFavorites('Agra')" class="favorite-btn">Add to Favorites</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 ExplorX. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
+    <script src="dest.js"></script>
+</body>
+</html>

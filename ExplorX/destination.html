@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | ExplorX</title>
+    <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="ExplorX Logo"></a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/india">Indian Gems</a></li>
+                
+                <li><a href="/hotel">Hotels</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <main>
+        <section id="destinations" class="destinations-section">
+            <h2>Explore Our Top Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-item">
+                    <a href="nyc.html"><img src="images/nyc.jpg" alt="New York City"></a>
+                    <h3>New York City</h3>
+                    <p>Experience the vibrant life of New York City, the city that never sleeps.</p>
+                </div>
+                <div class="destination-item">
+                    <a href="paris.html"><img src="images/paris.jpg" alt="Paris"></a>
+                    <h3>Paris</h3>
+                    <p>Discover the romance and elegance of Paris, the City of Lights.</p>
+                </div>
+                <div class="destination-item">
+                    <a href="tokyo.html"><img src="images/tokyo.jpg" alt="Tokyo"></a>
+                    <h3>Tokyo</h3>
+                    <p>Explore the futuristic city of Tokyo with its rich cultural heritage.</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="toggleDarkMode()" class="dark-mode-btn">Toggle Dark Mode</button>
+                <button onclick="addToFavorites('Agra')" class="favorite-btn">Add to Favorites</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 ExplorX. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
+    <script src="dest.js"></script>
+</body>
+</html>

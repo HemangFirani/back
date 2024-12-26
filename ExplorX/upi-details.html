@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Details | ExplorX</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="progress-container">
+        <div class="step step-1 completed">
+            <div class="circle">1</div>
+            <div class="label">Booking</div>
+        </div>
+        <div class="step step-2 completed">
+            <div class="circle">2</div>
+            <div class="label">Payment</div>
+        </div>
+        <div class="step step-3 active">
+            <div class="circle">3</div>
+            <div class="label">Confirmation</div>
+        </div>
+    </div>
+    
+    <div class="hel">
+        <section class="booking-form">
+            <h2>UPI Payment</h2>
+            <form id="upiForm" onsubmit="completePayment(event)">
+                <div class="form-group">
+                    <label>UPI Options:</label>
+                    <div>
+                        <input type="radio" name="upi" value="paytm" required /> Paytm
+                        <input type="radio" name="upi" value="gpay" required /> Google Pay
+                        <input type="radio" name="upi" value="phonepe" required /> PhonePe
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="upiId">UPI ID:</label>
+                    <input type="text" id="upiId" placeholder="example@upi" required />
+                </div>
+
+                <button type="submit" class="submit-button">Pay Now</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        function completePayment(event) {
+            event.preventDefault();
+            alert("Payment Successful! Thank you for booking with ExplorX.");
+            window.location.href = "/";
+        }
+    </script>
+</body>
+</html>
